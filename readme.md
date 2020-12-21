@@ -52,3 +52,17 @@ also http://superuser.com/questions/723703/why-is-chromium-bypassing-etc-hosts-a
 
 so to fix this problem, i just remove '8.8.8.8' from my DNS list
 # docker-dnsmasq
+
+
+
+# Commands
+do this command inside the folder where the `docker-compose.yml` file
+To up docker service
+$ docker-compose up -d --remove-orphans
+
+Bring down
+$ docker-compose down
+
+To show the stats:
+$ docker-compose logs  -f #run this on seperate terminal
+$ docker kill -s USR1 docker-dnsmasq_dnsmasq_1 #run on seperate terminal
